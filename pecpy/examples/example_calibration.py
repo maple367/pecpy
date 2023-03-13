@@ -1,8 +1,6 @@
 from pecpy.core import *
 from pecpy.gdsutils import *
 
-import matplotlib.image as pim
-
 # Load resources.
 cheese_mini = get_resource("cheese_mini.png")
 # Set parameters.
@@ -25,7 +23,7 @@ for alpha in alphas:
 # 2) Convert to gds files (can take some time depending on the geometrical complexity of the optimized dose patterns).
 for alpha in alphas:
     for eta in etas:
-        img = pim.imread(os.path.join(template.format(alpha, eta), "dose-beta{}.png".format(int(betas[-1]))))
+        img = misc.imread(os.path.join(template.format(alpha, eta), "dose-beta{}.png".format(int(betas[-1]))))
         lib = img2gds(img, levels=2, min_area=4, tolerance=1, center=True, smooth=(3, 1))
         with open("{}.gds".format(template.format(alpha, eta)), 'wb') as stream:
             lib.save(stream)
