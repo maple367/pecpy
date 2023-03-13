@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: pecpy
+Version: 0.7
+Summary: Optimization-based proximity effect correction
+Home-page: https://git.kern.phys.au.dk/SunTune/pecpy
+Author: Emil Haldrup Eriksen
+Author-email: emher@au.dk
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: The pecpy library provides an implementation of the proximity effect correction (PEC) scheme proposed in [1]. Examples are bundled with the source code in
+        
+        pecpy/examples
+        
+        If you use this package in your research, please cite the original publication. If you use Windows, I can recommend [2] for obtaining pre-compiled versions of fftw, shapely, and opencv. Note that the latter two packages are only needed for the gds <-> image mapping.
+        
+        [1] https://doi.org/10.1016/j.mee.2018.07.013
+        
+        [2] https://www.lfd.uci.edu/~gohlke/pythonlibs/
+Platform: UNKNOWN

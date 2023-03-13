@@ -1,0 +1,6 @@
+opencv-python
+pillow
+python-gdsii
+shapely
+numpy
+scipy
