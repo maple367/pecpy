@@ -2,8 +2,9 @@ import matplotlib.pyplot as plt
 from pecpy.gdsutils import *
 from pecpy.core import *
 
+
 # Convert (greyscale, two-toned) image to gds.
-img = misc.imread(get_resource("cheese_mini.png"), flatten=True)
+img = cv2.imread(get_resource("cheese_mini.png"))
 lib = img2gds(img, tolerance=10, min_area=16, levels=2)
 with open("example.gds", 'wb') as stream:
     lib.save(stream)
