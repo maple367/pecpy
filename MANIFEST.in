@@ -1,0 +1,12 @@
+#examples
+include pecpy/examples/*.py
+
+#resources
+include pecpy/resources/*.png
+include pecpy/resources/*.gds
+
+#Misc
+include requirements.txt
+include LICENSE.txt
+include README.rst
+ 
